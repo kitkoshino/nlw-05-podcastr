@@ -1,0 +1,9 @@
+@import './variables.scss';
+
+.wrapper {
+  display: flex;
+
+  main {
+    flex: 1;
+  }
+}
