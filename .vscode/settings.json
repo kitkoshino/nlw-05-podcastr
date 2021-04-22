@@ -1,0 +1,15 @@
+{
+  "workbench.colorCustomizations": {
+    "editor.background": "#201c2b",
+    "editorIndentGuide.background": "#333136",
+    "panel.background": "#14121d",
+    "sideBarSectionHeader.background": "#0f0e16",
+    "editor.findMatchBackground": "#96969675",
+    "editor.findMatchHighlightBackground": "#96969675",
+    "editor.wordHighlightBackground": "#bc2cff3d",
+    "editor.selectionHighlightBackground": "#96969675",
+    "list.focusBackground": "#0f0e16",
+    "list.hoverBackground": "#21222c80",
+    "sideBar.border": "#0f0e16",
+  }
+}
