@@ -25,7 +25,7 @@
   footer {
     align-self: stretch;
 
-    &.empty {
+    &.empty .progress {
       opacity: 0.5;
     }
   }
@@ -38,6 +38,31 @@
       height: 4px;
       background: $purple-300;
       border-radius: 2px;
+    }
+  }
+
+  .currentEpisode {
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+      border-radius: 1.5rem;
+    }
+
+    strong {
+      display: block;
+      margin-top: 2rem;
+      font: 600 1.2rem Lexend,sans-serif;
+      line-height: 1.5rem;
+    }
+
+    span {
+      display: block;
+      margin-top: 1rem;
+      opacity: 0.6;
+      line-height: 1.5rem;
     }
   }
 
@@ -78,12 +103,35 @@
       background: transparent;
       border: 0;
       font-size: 0;
+      transition: filter 0.2s;
+
+      &:disabled {
+        cursor: default;
+        opacity: 0.5;
+      }
+
+      &:hover:not(:disabled) {
+        filter: brightness(0.75);
+      }
+
+      // deixar o icon em verde
+      &.isActive {
+        filter: invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
+      }
+
+      &.isActive:hover {
+        filter: brightness(0.6) invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
+      }
 
       &.playButton {
         width: 4rem;
         height: 4rem;
         border-radius: 1rem;
         background: $purple-400;
+
+        &:hover:not(:disabled) {
+          filter: brightness(0.95);
+        }
       }
     }
   }
