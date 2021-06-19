@@ -15,7 +15,7 @@
 - Html 5
 - Css 3 / SCSS
 - Axios
-- 
+
 # :video_game: Run
 
 ### Run Application
